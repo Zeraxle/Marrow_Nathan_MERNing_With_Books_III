@@ -19,10 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<AllBooks books={books} setBooks={setBooks}/>}/>
         <Route path='/book/create' element={<BookForm submitFunction={createBook}/>}/>
-        <Route 
-              path='/book/:id/update' 
-              element={<UpdateForm setBooks={setBooks} submitFunction={updateBookById}/>}
-              />
+        <Route path='/book/:id/update' element={<UpdateForm submitFunction={updateBookById}/>}/>
         <Route path='/book/:id/details' element={<BookDetails setBooks={setBooks}/>}/>
       </Routes>
     </>

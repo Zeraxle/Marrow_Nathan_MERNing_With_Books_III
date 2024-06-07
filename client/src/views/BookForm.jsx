@@ -1,11 +1,11 @@
 import Nav from "../components/Nav"
-import { useState, useEffect } from "react"
-import { useNavigate, useParams } from "react-router-dom"
-import { createBook, getBookById } from "../services/book.service"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+
 
 const BookForm = (props) => {
 
-    const { id } = useParams()
+
     const {submitFunction} = props
     const navigate = useNavigate()
     const [bookData, setBookData] = useState({
